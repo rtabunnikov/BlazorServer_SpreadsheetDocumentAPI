@@ -24,7 +24,7 @@
 
             <DxFormLayoutItem Caption="Period in Years:" ColSpanMd="5">
                 <Template>
-                    <DxSpinEdit @bind-Value="PeriodInDays" Increment="1" MinValue="1" MaxValue="100" />
+                    <DxSpinEdit @bind-Value="PeriodInYears" Increment="1" MinValue="1" MaxValue="100" />
                 </Template>
             </DxFormLayoutItem>
 
@@ -72,7 +72,7 @@
         get => loanAmount;
         set { loanAmount = value; UpdateValue(); }
     }
-    int PeriodInDays {
+    int PeriodInYears {
         get => periodInYears;
         set { periodInYears = value; UpdateValue(); }
     }
